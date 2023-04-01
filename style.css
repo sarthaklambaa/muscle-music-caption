@@ -1,0 +1,91 @@
+/* Define font styles */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Lora:400,700');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+select, input[type="text"], textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-color: #ccc;
+  background-color: #f2f2f2;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: none;
+  background-color: #ff69b4;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #f44b92;
+}
+
+#copy-button {
+  margin-left: 20px;
+  background-color: #333;
+}
+
+#copy-button:hover {
+  background-color: #666;
+  }
+
+#output {
+  margin-bottom: 20px;
+}
+
+/* Add success message for copy */
+#success-message {
+  font-size: 14px;
+  color: green;
+  margin-top: 10px;
+  }
+  
+  /* Hide success message by default */
+  #success-message.hide {
+  display: none;
+  }
+  
+  /* Show success message on button click */
+  #copy-button.clicked ~ #success-message {
+  display: block;
+  }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
